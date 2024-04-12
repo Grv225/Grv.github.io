@@ -1,0 +1,266 @@
+/************* enter your name: Gaurav Kajla
+
+***** colour palette: *****
+- mustard yellow (used for header, footer, and buttons): #E5AF42
+- cornflower blue (used for hover states): #4278e5
+
+*/
+
+/************* site defaults *************/
+body {
+    width: 950px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/************* site-wide text styling *************/
+h1 {
+    font-size: 48px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.large-text {
+    font-size: 24px;
+}
+
+.fake-button {
+    background-color: #E5AF42;
+    text-align: center;
+    line-height: 3;
+    border: 1px solid black;
+    margin: 0 75px;
+    width: 250px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+main a:hover,
+footer a:hover {
+    text-decoration: underline;
+}
+
+.fake-button:hover,
+.blue-hover:hover {
+    text-decoration: underline;
+    background-color: #4278e5;
+    color: white;
+    cursor: pointer;
+}
+
+/************* header/footer styling *************/
+header, footer {
+    background-color: #E5AF42;
+}
+
+header {
+    height: 150px;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    margin: 25px 25px 25px 0;
+}
+
+header h1 {
+    width: calc(100% - 125px);
+}
+
+main {
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 20px 0;
+    font-weight: 200;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+/************* index page *************/
+.index .about-us {
+    flex: 1;
+}
+
+.index img {
+    width: 300px;
+    margin-left: 25px;
+    margin-bottom: 50px;
+}
+
+.index h2 {
+    line-height: 36px;
+}
+
+.index p {
+    margin-bottom: 12px;
+}
+
+.index .flex {
+    justify-content: space-around;
+}
+
+.index .flex {
+    margin-bottom: 50px;
+}
+
+
+
+
+/************* bookings page *************/
+
+.booking-page {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.booking-page h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.booking-page p {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.booking-page .day-selector {
+    padding: 0;
+    list-style-type: none;
+    margin: 0 auto 12px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.booking-page .day-selector li {
+    width: auto;
+    padding: 8px 12px;
+    margin: 0 5px;
+    border: 1px solid black;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.booking-page .small-button {
+    display: inline-block;
+    border: 1px solid black;
+    margin: 0 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.booking-page .top-margin {
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.booking-page #clear-button {
+    width: 200px;
+    display: block;
+    margin: 24px auto;
+    cursor: pointer;
+}
+
+.booking-page .clicked,
+.booking-page .blue-hover:hover {
+    background-color: #E5AF42;
+    color: white;
+}
+
+
+.booking-page .fake-button {
+    background-color: transparent;
+    color: black;
+    line-height: normal;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+
+
+/************* contact page *************/
+
+.contact {
+    max-height: 420px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact label {
+    width: 150px;
+    text-align: right;
+    margin-right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 24px;
+    font-size: 16px;
+    border: 1px solid black;
+    margin-bottom: 24px;
+}
+
+.contact input[type="text"],
+.contact input[type="email"] {
+    width: 300px;
+}
+
+.contact textarea {
+    height: 150px;
+    width: 300px;
+}
+
+.contact button {
+    width: calc(300px + 24px);
+    line-height: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    border: 1px solid black;
+    margin-top: 24px;
+}
+
+
